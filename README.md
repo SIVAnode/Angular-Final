@@ -1,3 +1,40 @@
+## Consigna  
+  
++ Con lo que se viene trabajando sumar las siguientes tareas: Incorporar un feature store para cada feature module + Incorporar la librería effects y consumir todas las API rest de allí. Sugerimos la lectura de la consigna detallada y las rúbricas de evaluación.
+  
+## Objetivos generales  
+  
++ Optimizar tu proyecto frontend basado en Angular, integrando lo trabajado en clases hasta el momento y respetando los aspectos técnicos y funcionales esenciales.  
+
+## Se debe entregar  
+  
++ Diseño RedUx
++ Store: acciones y reducers
++ Selectores
++ Feature store
++ Effects
+
+## Objetivos específicos  
+  
++ Comprender el concepto de componentes y servicios, para su reutilización en otros proyectos.
++ Comprender el concepto de módulos, lazy loading, rutas y la organización del proyecto en módulos core, share y feature
++ Integrar el patrón de estado global Redux y comprender la importancia de su uso utilizando la librería Ngrx
++ Realizar test unitarios del proyecto front end
+
+### Aspectos a tener en cuenta:
+
++ El proyecto tiene que compilar.
++ No tener errores por consola.
++ No mostrar console.log().
+  
+### Requisitos extra (no obligatorios):
+  
++ Correcta maquetación.
++ Buenas prácticas de codificación.
++ Test unitarios.
+      
+==========
+
 # AngularFINALSimonetta
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
