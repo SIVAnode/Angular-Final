@@ -34,7 +34,7 @@ export class AuthService {
       ).subscribe({
         next:(usersResult)=>{
           if(!usersResult[0]){
-            alert('Email o password invalidos');
+            alert('Correo o contraseña invalidos');
             return;
           }else{
             localStorage.setItem('access_token', usersResult[0].accessToken);
@@ -45,7 +45,7 @@ export class AuthService {
           error: (err) => {
           if (err instanceof HttpErrorResponse) {
             if (err.status === 0) {
-              alert('El servidor esta caido');
+              alert('El servidor esta caido en estos momentos');
             }
           }
         },
