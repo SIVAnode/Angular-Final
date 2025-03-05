@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let user of users$ | async">
+      {{ user.name }} - <button (click)="deleteUserById(user.id)">X</button>
+    </li>
+  </ul>

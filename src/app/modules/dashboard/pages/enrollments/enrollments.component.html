@@ -1,0 +1,49 @@
+<mat-card class="p-4 shadow-lg rounded-lg">
+  <mat-spinner *ngIf="isLoading$ | async; else contentTemplate" class="block mx-auto" diameter="50"></mat-spinner>
+
+  <ng-template #contentTemplate>
+    <ng-container *ngIf="!(error$ | async); else errorTemplate">
+      <h2 class="text-center text-xl font-semibold mb-4">Inscripción</h2>
+      
+      <form [formGroup]="enrollmentForm" (ngSubmit)="onSubmit()" class="grid gap-4">
+        <mat-form-field class="w-full">
+          <mat-label>Estudiante</mat-label>
+          <mat-select formControlName="studentId">
+            <mat-option *ngFor="let student of students" [value]="student.id">
+              {{ student.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="w-full">
+          <mat-label>Curso</mat-label>
+          <mat-select formControlName="courseId">
+            <mat-option *ngFor="let course of courses" [value]="course.id">
+              {{ course.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div class="flex justify-end gap-2">
+          <button type="button" mat-stroked-button color="primary" (click)="createEnrollment()">
+            Crear Inscripción
+          </button>
+          <button type="submit" mat-flat-button color="accent">
+            Guardar
+          </button>
+        </div>
+      </form>
+
+      <mat-card class="mt-4 p-4 bg-gray-50 rounded-lg">
+        <h3 class="text-lg font-medium">Inscripciones</h3>
+        <pre class="bg-gray-200 p-2 rounded-md">{{ enrollments$ | async | json }}</pre>
+      </mat-card>
+    </ng-container>
+  </ng-template>
+
+  <ng-template #errorTemplate>
+    <div class="text-center text-red-600 font-semibold p-4">
+      <p>Ocurrió un error inesperado. Por favor, intenta nuevamente.</p>
+    </div>
+  </ng-template>
+</mat-card>

@@ -1,0 +1,110 @@
+{
+  "users": [
+    {
+      "id": "vnD3s",
+      "email": "admin@coder.com",
+      "password": "987654",
+      "name": "Daniel Simonetta",
+      "accessToken": "djMDFJNdfmvcJKDFdsmd23GFuedsvFGD2d32",
+      "role": "ADMIN"
+    },
+    {
+      "id": "avs3D",
+      "email": "user@coder.com",
+      "password": "456789",
+      "name": "Usuario Coder",
+      "accessToken": "djMDFJNd3gngh61DFd56hhgfddd23GFue232",
+      "role": "EMPLOYEE"
+    },
+    {
+      "id": "fdvc",
+      "email": "sosa@email.com",
+      "password": "123456",
+      "name": "Leo Sosa",
+      "accessToken": "asdvfdsjgkfdkgjfdasdfDFDSBVDFSDF",
+      "role": "STUDENT"
+    },
+    {
+      "id": "fdvv3c",
+      "email": "Vole@email.com",
+      "password": "123456",
+      "name": "Lucas Vole",
+      "accessToken": "dssdxcvdfgdsg45EDFDSfgERWCXasdFDGFDSGf",
+      "role": "STUDENT"
+    },
+    {
+      "id": "fdvv3d",
+      "email": "carnejo@email.com",
+      "password": "123456",
+      "name": "Valeria Carnejo",
+      "accessToken": "dssdxcvdfgdsg45EDFDSfgERWCXGSFDGFDSGr",
+      "role": "STUDENT"
+    }
+  ],
+  "courses": [
+    {
+      "id": "103",
+      "name": "Programación con JavaScript",
+      "teacher": "Juan Romero",
+      "time": "Miércoles 18:00 - 20:00"
+    },
+    {
+      "id": "104",
+      "name": "After Effects",
+      "teacher": "Sarah Black",
+      "time": "Jueves 08:00 - 10:00"
+    },
+    {
+      "id": "105",
+      "name": "Diseño UX/UI",
+      "teacher": "Richard Green",
+      "time": "Viernes 16:00 - 18:00"
+    },
+    {
+      "id": "106",
+      "name": "VueJS",
+      "teacher": "Emily White",
+      "time": "Miércoles 18:00 - 20:00"
+    },
+    {
+      "id": "107",
+      "name": "Programación con PHP",
+      "teacher": "David Smith",
+      "time": "Miércoles 11:00 - 14:00"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "105",
+      "name": "John Wick",
+      "courseId": "105"
+    },
+    {
+      "id": "106",
+      "name": "Clara Ray",
+      "courseId": "105"
+    }
+  ],
+  "enrollments": [
+    {
+      "id": "adc33D",
+      "studentId": "fdvc",
+      "courseId": "103"
+    },
+    {
+      "id": "c801",
+      "studentId": "fdvv3c",
+      "courseId": "104"
+    },
+    {
+      "id": "86fa",
+      "studentId": "fdvv3c",
+      "courseId": "103"
+    },
+    {
+      "id": "9230",
+      "courseId": "106",
+      "studentId": "OKAN93"
+    }
+  ]
+}

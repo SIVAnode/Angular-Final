@@ -1,0 +1,13 @@
+<h1>Cursos</h1>
+@if(isLoading){
+    <div class="spinner-container">
+        <mat-spinner diameter="50" color="success"></mat-spinner>
+        <p>Espere un momento, por favor...</p>
+    </div>
+} @else {
+    <button [disabled]="!(isAdmin$ | async)" (click)="openFormDialog()" mat-flat-button >
+        Crear curso
+    </button>
+
+    <app-courses-table [dataSource]="dataSource" (delete)="onDelete($event)" (edit)="openFormDialog($event)"></app-courses-table>
+}

@@ -1,0 +1,27 @@
+<h1 mat-dialog-title>Crear curso</h1>
+
+<div mat-dialog-content>
+    <form [formGroup]="courseForm">
+      
+        <mat-form-field class="w-full">
+          <mat-label>Nombre</mat-label>
+          <input formControlName="name" matInput />
+        </mat-form-field>
+      
+        <mat-form-field class="w-full">
+          <mat-label>Profesor</mat-label>
+          <input formControlName="teacher" matInput />
+        </mat-form-field>
+      
+        <mat-form-field class="w-full">
+          <mat-label>Horario</mat-label>
+          <input formControlName="time" matInput />
+        </mat-form-field>
+      </form>
+      
+</div>
+
+<div mat-dialog-actions>
+  <button mat-dialog-close mat-button>Cancelar</button>
+  <button  mat-button (click)="onConfirm()">Confirmar</button>
+</div>

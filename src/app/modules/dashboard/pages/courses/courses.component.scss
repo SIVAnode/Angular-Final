@@ -1,0 +1,23 @@
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 16px;
+}
+
+.spinner-container p {
+    font-size: 1.2em;
+    color: #0c6739;
+}
+
+h1 {
+    margin: 20px auto;
+    color: rgb(47, 24, 91);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px solid #dcdcdc;
+}
