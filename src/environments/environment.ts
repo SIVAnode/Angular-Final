@@ -1,4 +1,6 @@
 export const environment = {
-  baseApiUrl: 'https://my-api.com.ar/api',
+  production: true,
   useFakeApi: false,
+  baseApiUrl: 'https://my-api.com.ar/api',
 };
+
