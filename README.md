@@ -43,7 +43,7 @@
 
 1. Clona este repositorio en tu máquina local:
    ```bash
-   git clone https://https://github.com/SIVAnode/Angular-Final
+   git clone https://github.com/SIVAnode/Angular-Final
    ```
 
 2. Instala las dependencias:
